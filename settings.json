@@ -1,0 +1,21 @@
+{
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.fontFamily": "'cascadia code', Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "explorer.confirmDelete": false,
+  "workbench.iconTheme": "vscode-icons",
+  "powermode.enabled": true,
+
+  "editor.formatOnSave": true,
+  "editor.fontWeight": "normal",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  "editor.minimap.enabled": false,
+  "workbench.colorTheme": "Learn with Sumit - Shades of Grey",
+
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": true,
+  "terminal.integrated.fontFamily": "Hack Nerd Font"
+}
