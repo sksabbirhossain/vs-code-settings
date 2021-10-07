@@ -1,21 +1,45 @@
 {
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "editor.fontFamily": "'cascadia code', Consolas, 'Courier New', monospace",
   "editor.fontLigatures": true,
+  "editor.fontFamily": " 'Operator Mono ', 'cascadia code', Consolas, 'Courier New', monospace ",
+
+  //vs code comment font style
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": ["comment"],
+        "settings": {
+          "fontStyle": "italic bold"
+        }
+      }
+    ]
+  },
+
   "explorer.confirmDelete": false,
   "workbench.iconTheme": "vscode-icons",
   "powermode.enabled": true,
 
+  //vs code prettier extension setup
   "editor.formatOnSave": true,
   "editor.fontWeight": "normal",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
 
-  "editor.minimap.enabled": false,
-  "workbench.colorTheme": "Learn with Sumit - Shades of Grey",
-
   "javascript.updateImportsOnFileMove.enabled": "always",
   "editor.cursorBlinking": "expand",
   "editor.cursorSmoothCaretAnimation": true,
-  "terminal.integrated.fontFamily": "Hack Nerd Font"
+
+  //terminal font
+  "terminal.integrated.fontFamily": "Hack Nerd Font",
+
+  "editor.bracketPairColorization.enabled": true,
+  "editor.fontSize": 15,
+  "editor.minimap.enabled": false,
+  "editor.formatOnType": true,
+
+  //vs code status bar color
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#190330c7"
+  }
 }
+
