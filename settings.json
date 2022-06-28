@@ -1,8 +1,13 @@
 {
+  //vs code theme
+  "workbench.colorTheme": "Dracula Soft",
+  //icons
+  "workbench.iconTheme": "vscode-icons",
+  "glassit.alpha": 250,
   "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "editor.fontLigatures": true,
+  //font style
   "editor.fontFamily": " 'Operator Mono ', 'cascadia code', Consolas, 'Courier New', monospace ",
+  "editor.fontLigatures": true,
 
   //vs code comment font style
   "editor.tokenColorCustomizations": {
@@ -16,30 +21,37 @@
     ]
   },
 
-  "explorer.confirmDelete": false,
-  "workbench.iconTheme": "vscode-icons",
+
+  //vs code "powermode extenstion settings
   "powermode.enabled": true,
+  "powermode.combo.counterEnabled": "hide",
+  "powermode.combo.location": "off",
+  "powermode.shake.enabled": false,  
 
   //vs code prettier extension setup
   "editor.formatOnSave": true,
   "editor.fontWeight": "normal",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-
   "javascript.updateImportsOnFileMove.enabled": "always",
   "editor.cursorBlinking": "expand",
   "editor.cursorSmoothCaretAnimation": true,
 
   //terminal font
-  "terminal.integrated.fontFamily": "Hack Nerd Font",
+  "terminal.integrated.fontFamily": "monospace",
 
+  //basic style
   "editor.bracketPairColorization.enabled": true,
   "editor.fontSize": 15,
   "editor.minimap.enabled": false,
+  "editor.wordWrap": "on",
   "editor.formatOnType": true,
+  "editor.guides.bracketPairs": "active",
 
   //vs code status bar color
   "workbench.colorCustomizations": {
     "statusBar.background": "#190330c7"
-  }
+  },
+  "files.autoSave": "afterDelay"
 }
+
 
