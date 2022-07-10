@@ -37,7 +37,7 @@
   "editor.cursorSmoothCaretAnimation": true,
 
   //terminal font
-  "terminal.integrated.fontFamily": "Hack Nerd Font",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
 
   //basic style
   "editor.bracketPairColorization.enabled": true,
