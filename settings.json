@@ -1,32 +1,35 @@
 {
-  //vs code theme
-  "workbench.colorTheme": "Dracula Soft",
-  //icons
   "workbench.iconTheme": "vscode-icons",
   "glassit.alpha": 250,
   "editor.suggestSelection": "first",
   //font style
-  "editor.fontFamily": " 'Operator Mono ', 'cascadia code', Consolas, 'Courier New', monospace ",
+  "editor.fontFamily": " 'cascadia code', 'Operator Mono ', Consolas, 'Courier New', monospace ",
   "editor.fontLigatures": true,
 
-  //vs code comment font style
+  //vs code  font style
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
-        "scope": ["comment"],
+        "scope": [
+          //following will be in italic (=FlottFlott)
+          "comment",
+          "entity.name.type.class", //class names
+          "keyword", //import, export, return…
+          "storage.modifier", //static keyword
+          "storage.type" //class keyword
+        ],
         "settings": {
-          "fontStyle": "italic bold"
+          "fontStyle": "italic bold "
         }
       }
     ]
   },
 
-
   //vs code "powermode extenstion settings
   "powermode.enabled": true,
   "powermode.combo.counterEnabled": "hide",
   "powermode.combo.location": "off",
-  "powermode.shake.enabled": false,  
+  "powermode.shake.enabled": false,
 
   //vs code prettier extension setup
   "editor.formatOnSave": true,
@@ -35,6 +38,11 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "editor.cursorBlinking": "expand",
   "editor.cursorSmoothCaretAnimation": true,
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.sortImports": true
+  },
 
   //terminal font
   "terminal.integrated.fontFamily": "MesloLGS NF",
@@ -51,7 +59,30 @@
   "workbench.colorCustomizations": {
     "statusBar.background": "#190330c7"
   },
-  "files.autoSave": "afterDelay"
+  "files.autoSave": "afterDelay",
+  "liveServer.settings.donotShowInfoMsg": true,
+
+  // for reactjs
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "explorer.confirmDragAndDrop": false,
+
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  // show hidden file
+  "files.exclude": {
+    "**/.git": false
+  },
+
+  // for css suppoet
+  "css.styleSheets": [
+    "https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css",
+    "/style.css",
+    "style.css",
+    "${fileBasenameNoExtension}.css",
+    "jsx"
+  ],
+  "workbench.colorTheme": "Dracula"
 }
-
-
