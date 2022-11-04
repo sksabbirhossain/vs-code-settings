@@ -1,12 +1,28 @@
 {
+  //basic style
+  "editor.bracketPairColorization.enabled": true,
+  "editor.fontSize": 15,
+  "editor.fontWeight": "normal",
+  "editor.minimap.enabled": false,
+  "editor.wordWrap": "on",
+  "editor.formatOnType": true,
+  "editor.guides.bracketPairs": "active",
   "workbench.iconTheme": "vscode-icons",
   "glassit.alpha": 250,
   "editor.suggestSelection": "first",
-  //font style
-  "editor.fontFamily": " 'cascadia code', 'Operator Mono ', Consolas, 'Courier New', monospace ",
-  "editor.fontLigatures": true,
+  "workbench.colorTheme": "Atom One Dark",
+  "files.autoSave": "afterDelay",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": true,
 
-  //vs code  font style
+  //vs code using font 
+  "editor.fontFamily": " 'Cascadia Code', 'Operator Mono ', Consolas, 'Courier New', monospace ",
+  // "editor.fontLigatures": true,
+  "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
+
+  // vs code  font style
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
@@ -33,11 +49,7 @@
 
   //vs code prettier extension setup
   "editor.formatOnSave": true,
-  "editor.fontWeight": "normal",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "editor.cursorBlinking": "expand",
-  "editor.cursorSmoothCaretAnimation": true,
 
   "editor.codeActionsOnSave": {
     "source.fixAll": true,
@@ -47,20 +59,10 @@
   //terminal font
   "terminal.integrated.fontFamily": "MesloLGS NF",
 
-  //basic style
-  "editor.bracketPairColorization.enabled": true,
-  "editor.fontSize": 15,
-  "editor.minimap.enabled": false,
-  "editor.wordWrap": "on",
-  "editor.formatOnType": true,
-  "editor.guides.bracketPairs": "active",
-
   //vs code status bar color
   "workbench.colorCustomizations": {
-    "statusBar.background": "#190330c7"
+    "statusBar.background": "#230444c7"
   },
-  "files.autoSave": "afterDelay",
-  "liveServer.settings.donotShowInfoMsg": true,
 
   // for reactjs
   "emmet.includeLanguages": {
@@ -74,15 +76,5 @@
   // show hidden file
   "files.exclude": {
     "**/.git": false
-  },
-
-  // for css suppoet
-  "css.styleSheets": [
-    "https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css",
-    "/style.css",
-    "style.css",
-    "${fileBasenameNoExtension}.css",
-    "jsx"
-  ],
-  "workbench.colorTheme": "Dracula"
+  }
 }
