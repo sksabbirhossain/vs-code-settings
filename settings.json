@@ -10,15 +10,15 @@
   "workbench.iconTheme": "vscode-icons",
   "glassit.alpha": 250,
   "editor.suggestSelection": "first",
-  "workbench.colorTheme": "Atom One Dark",
   "files.autoSave": "afterDelay",
   "liveServer.settings.donotShowInfoMsg": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "editor.cursorBlinking": "expand",
-  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "explorer.compactFolders": false,
 
-  //vs code using font 
-  "editor.fontFamily": " 'Cascadia Code', 'Operator Mono ', Consolas, 'Courier New', monospace ",
+  //vs code using font
+  "editor.fontFamily": " 'Cascadia Code', 'Operator Mono ', Consolas, 'Courier New', monospace",
   // "editor.fontLigatures": true,
   "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
 
@@ -47,22 +47,25 @@
   "powermode.combo.location": "off",
   "powermode.shake.enabled": false,
 
-  //vs code prettier extension setup
+  //vs code prettier & ESlint extension setup
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-
   "editor.codeActionsOnSave": {
-    "source.fixAll": true,
+    "source.fixAll.eslint": true,
+    "source.fixAll": false,
     "source.sortImports": true
   },
+  "eslint.rules.customizations": [{ "rule": "no-*", "severity": "off" }],
 
   //terminal font
   "terminal.integrated.fontFamily": "MesloLGS NF",
 
-  //vs code status bar color
+  //vs code status & scroll bar
   "workbench.colorCustomizations": {
-    "statusBar.background": "#230444c7"
+    "statusBar.background": "#230444c7",
+    "scrollbarSlider.background": "#41364ec7"
   },
+  "editor.scrollbar.verticalScrollbarSize": 12,
 
   // for reactjs
   "emmet.includeLanguages": {
@@ -73,8 +76,11 @@
   "editor.quickSuggestions": {
     "strings": true
   },
+
   // show hidden file
   "files.exclude": {
     "**/.git": false
-  }
+  },
+  "workbench.colorTheme": "Dracula",
+  "explorer.confirmDelete": false
 }
